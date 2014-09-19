@@ -1,14 +1,12 @@
 //
-// Created by Terence Baker on 06/02/2014.
-// Copyright (c) 2014 Terence Baker. All rights reserved.
+//  UIView+Container.h
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIView (Container)
 
 - (void)addSubviewToContainer:(UIView *)subView;
 - (void)transitionedViewControllerInContainer:(UIView *)subview;
-- (void)removeOldContainerConstraints:(UIView *)subview;
 
 @end

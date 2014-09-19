@@ -1,16 +1,12 @@
 //
 //  UIColor+ColorWithBrightness.m
-//  SwipeStats
-//
-//  Created by BulbMBP5 on 30/01/2013.
-//  Copyright (c) 2013 Terence Baker. All rights reserved.
 //
 
 #import "UIColor+ColorWithBrightness.h"
 
 @implementation UIColor (ColorWithBrightness)
 
-+ (UIColor*) colorWithColor:(UIColor*)color andBrightness:(float)brightness {
++ (UIColor*)colorWithColor:(UIColor*)color andBrightness:(float)brightness {
     
     CGFloat hue;
     CGFloat saturation;

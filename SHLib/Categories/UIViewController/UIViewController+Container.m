@@ -1,6 +1,5 @@
 //
-// Created by Terence Baker on 06/02/2014.
-// Copyright (c) 2014 Terence Baker. All rights reserved.
+//  UIViewController+Container.h
 //
 
 #import "UIViewController+Container.h"
@@ -13,9 +12,11 @@
     [toViewController willMoveToParentViewController:self];
     [toViewController.view setFrame:fromViewController.view.bounds];
 
+    __weak typeof(self) weakSelf = self;
+
     [self transitionFromViewController:fromViewController toViewController:toViewController duration:duration options:options animations:animations completion:^(BOOL finished) {
 
-        [self.view transitionedViewControllerInContainer:toViewController.view];
+        [weakSelf.view transitionedViewControllerInContainer:toViewController.view];
 
         completion(finished);
     }];

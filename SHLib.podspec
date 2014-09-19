@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SHLib"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "A series of useful functions used often in projects."
   s.description      = <<-DESC
                        Some useful functions and categories I found myself using for most of my projects.
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'SHLib'
-
+  s.source_files = 'SHLib/*/*/*'
+  s.framework  = 'UIKit'
 end
