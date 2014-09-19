@@ -8,6 +8,12 @@ it, simply add the following line to your Podfile:
 
     pod "SHLib"
 
+Sub Specs
+
+    {Category_Class} - All categories for that class
+    Container - Classes for enhancing container views
+    SHTableViewDelegate - A UITableViewDelegate/Datasource that removes a lot of the boilerplate when setting up your basic UITableView
+
 ## Author
 
 Terence Baker, stratushunter@gmail.com

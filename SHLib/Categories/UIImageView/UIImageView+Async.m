@@ -6,6 +6,7 @@
 #import "UIImageView+Async.h"
 #import <AVFoundation/AVFoundation.h>
 
+//TODO needs some work
 @implementation UIImageView (Async)
 
 static NSCache *_imageCache;

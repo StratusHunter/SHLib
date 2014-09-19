@@ -51,8 +51,8 @@
     CGSize imageViewSize = self.frame.size;
 
     // Difference in width and height
-    int widthDif = imageViewSize.width - size.width;
-    int heightDif = imageViewSize.height - size.height;
+    CGFloat widthDif = imageViewSize.width - size.width;
+    CGFloat heightDif = imageViewSize.height - size.height;
 
     // Image is Centered within view, get origin
     CGPoint origin = CGPointMake(widthDif / 2, heightDif / 2);

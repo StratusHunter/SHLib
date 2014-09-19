@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SHLib"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A series of useful functions used often in projects."
   s.description      = <<-DESC
                        Some useful functions and categories I found myself using for most of my projects.
@@ -24,4 +24,37 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SHLib/*/*/*'
   s.framework  = 'UIKit'
+
+      s.subspec 'NSObject' do |sub|
+        sub.source_files = 'SHLib/Categories/NSObject/*'
+      end
+
+      s.subspec 'NSString' do |sub|
+        sub.source_files = 'SHLib/Categories/NSString/*'
+      end
+
+      s.subspec 'UIColor' do |sub|
+        sub.source_files = 'SHLib/Categories/UIColor/*'
+      end
+
+      s.subspec 'UIImage' do |sub|
+        sub.source_files = 'SHLib/Categories/UIImage/*'
+      end
+
+      s.subspec 'UIImageView' do |sub|
+        sub.source_files = 'SHLib/Categories/UIImageView/*'
+      end
+
+      s.subspec 'UIView' do |sub|
+        sub.source_files = 'SHLib/Categories/UIView/*'
+      end
+
+      s.subspec 'Container' do |sub|
+        sub.source_files = 'SHLib/Categories/Container/*/*'
+      end
+
+      s.subspec 'SHTableViewDelegate' do |sub|
+        sub.source_files = 'SHLib/Classes/SHTableViewDelegate/*', 'SHLib/Categories/NSObject/*'
+      end
+
 end
