@@ -1,13 +1,3 @@
-# SHLib
-
-[![CI Status](http://img.shields.io/travis/Terence Baker/SHLib.svg?style=flat)](https://travis-ci.org/Terence Baker/SHLib)
-[![Version](https://img.shields.io/cocoapods/v/SHLib.svg?style=flat)](http://cocoadocs.org/docsets/SHLib)
-[![License](https://img.shields.io/cocoapods/l/SHLib.svg?style=flat)](http://cocoadocs.org/docsets/SHLib)
-[![Platform](https://img.shields.io/cocoapods/p/SHLib.svg?style=flat)](http://cocoadocs.org/docsets/SHLib)
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003D02F119CC398100DD4F4A /* SHLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003D02F019CC398100DD4F4A /* SHLib.h */; };
-		003D02F319CC398100DD4F4A /* SHLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 003D02F219CC398100DD4F4A /* SHLib.m */; };
 		003D030719CC39AF00DD4F4A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 003D030519CC39AF00DD4F4A /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				003D02F119CC398100DD4F4A /* SHLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,8 +24,6 @@
 
 /* Begin PBXFileReference section */
 		003D02ED19CC398100DD4F4A /* libSHLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSHLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		003D02F019CC398100DD4F4A /* SHLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHLib.h; sourceTree = "<group>"; };
-		003D02F219CC398100DD4F4A /* SHLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLib.m; sourceTree = "<group>"; };
 		003D02F819CC398100DD4F4A /* SHLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		003D02FB19CC398100DD4F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003D030419CC39AF00DD4F4A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -78,8 +73,6 @@
 		003D02EF19CC398100DD4F4A /* SHLib */ = {
 			isa = PBXGroup;
 			children = (
-				003D02F019CC398100DD4F4A /* SHLib.h */,
-				003D02F219CC398100DD4F4A /* SHLib.m */,
 			);
 			path = SHLib;
 			sourceTree = "<group>";
@@ -188,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				003D030719CC39AF00DD4F4A /* README.md in Sources */,
-				003D02F319CC398100DD4F4A /* SHLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
