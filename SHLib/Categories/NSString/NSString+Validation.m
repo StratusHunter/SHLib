@@ -1,9 +1,5 @@
 //
 //  NSString+Validation.m
-//  ImageViewer
-//
-//  Created by Terence Baker on 22/05/2013.
-//  Copyright (c) 2013 BulbMBP5. All rights reserved.
 //
 
 #import "NSString+Validation.h"
@@ -29,7 +25,7 @@
     return [self validateWithRegex:numericRegex];    
 }
 
--(BOOL)validateWithRegex:(NSString *)regex {
+- (BOOL)validateWithRegex:(NSString *)regex {
     
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [emailTest evaluateWithObject:self];

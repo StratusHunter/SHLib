@@ -1,13 +1,9 @@
 //
 //  NSObject+NibLoad.m
-//  CLEngine
-//
-//  Created by Callum Abele on 19/07/2013.
-//  Copyright (c) 2013 CrowdLab. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "NSObject+NibLoad.h"
-
 
 @implementation NSObject (NibLoad)
 

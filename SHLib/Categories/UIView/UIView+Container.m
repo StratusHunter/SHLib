@@ -1,6 +1,5 @@
 //
-// Created by Terence Baker on 06/02/2014.
-// Copyright (c) 2014 Terence Baker. All rights reserved.
+//  UIView+Container.m
 //
 
 #import "UIView+Container.h"
@@ -20,7 +19,7 @@
     [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
 
     if (subview.superview != nil) {
-        
+
         NSDictionary *views = NSDictionaryOfVariableBindings(subview);
 
         NSArray *newWidthConst = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[subview]|"

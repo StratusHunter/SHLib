@@ -1,9 +1,8 @@
 //
-// Created by Terence Baker on 06/02/2014.
-// Copyright (c) 2014 Terence Baker. All rights reserved.
+//  UIViewController+Container.h
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIViewController (Container)
 
