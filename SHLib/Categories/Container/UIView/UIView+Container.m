@@ -9,10 +9,10 @@
 - (void)addSubviewToContainer:(UIView *)subview {
 
     [self addSubview:subview];
-    [self transitionedViewControllerInContainer:subview];
+    [self constrainSubview:subview];
 }
 
-- (void)transitionedViewControllerInContainer:(UIView *)subview {
+- (void)constrainSubview:(UIView *)subview {
 
     [self removeOldContainerConstraints:subview];
 

@@ -6,7 +6,10 @@
 
 @interface UIView (Container)
 
+/** Add a subview to a container making sure the subview will resize to the size of it's container **/
 - (void)addSubviewToContainer:(UIView *)subView;
-- (void)transitionedViewControllerInContainer:(UIView *)subview;
+
+/** Make a subview resize to the size of the container **/
+- (void)constrainSubview:(UIView *)subview;
 
 @end

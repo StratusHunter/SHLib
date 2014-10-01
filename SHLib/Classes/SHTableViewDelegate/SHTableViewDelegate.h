@@ -4,23 +4,27 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol SHTableSelectionDelegate <NSObject>
+/** Your subclass will implement these functions to add custom content to your cells and setup the table view as necessary **/
+@protocol SHTableDelegate <NSObject>
 
-- (void)tableView:(UITableView *)tableView itemSelected:(id)item atIndexPath:(NSIndexPath *)indexPath;
+@optional
+- (void)customInitForTableView:(UITableView *)tableView;
+- (void)configureCell:(id)cell atIndexPath:(NSIndexPath *)indexPath forTableView:(UITableView *)tableView withDataItem:(id)dataItem;
 
 @end
 
-@interface SHTableViewDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
+/** Protocol added as a wrapper that will tell you when the cell is selected and what item in the datasource is related to that cell **/
+@protocol SHTableSelectionDelegate <NSObject>
+
+- (void)tableView:(UITableView *)tableView cellSelected:(id)cell withDataItem:(id)item atIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@interface SHTableViewDelegate : NSObject <UITableViewDelegate, UITableViewDataSource, SHTableDelegate>
 
 @property(nonatomic, strong) NSArray *dataSource;
 @property(nonatomic, weak) id <SHTableSelectionDelegate> selectionDelegate;
 
-- (id)initWithTableView:(UITableView *)tableView;
-- (id)initWithTableView:(UITableView *)tableView andCellClass:(Class)cellClass;
-- (id)initWithTableView:(UITableView *)tableView withCellClass:(Class)cellClass andDataSource:(NSArray *)array;
-- (id)initWithTableView:(UITableView *)tableView andDataSource:(NSArray *)array;
-
-- (void)customInitForTableView:(UITableView *)tableView;
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath forTableView:(UITableView *)tableView;;
+- (id)initWithTableView:(UITableView *)tableView cellClass:(Class)cellClass andDataSource:(NSArray *)array;
 
 @end

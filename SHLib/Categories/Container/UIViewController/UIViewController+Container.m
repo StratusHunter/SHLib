@@ -16,7 +16,7 @@
 
     [self transitionFromViewController:fromViewController toViewController:toViewController duration:duration options:options animations:animations completion:^(BOOL finished) {
 
-        [weakSelf.view transitionedViewControllerInContainer:toViewController.view];
+        [weakSelf.view constrainSubview:toViewController.view];
 
         completion(finished);
     }];
